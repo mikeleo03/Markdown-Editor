@@ -1,3 +1,4 @@
+import "../styles/globals.css";
 import * as React from "react";
 
 type AppProps = { num: number };
