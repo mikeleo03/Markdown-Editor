@@ -1,6 +1,19 @@
 import "../styles/globals.css";
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import * as React from "react";
+import MarkdownEditor from "./main-editor";
 
-type AppProps = { num: number };
+function App() {
+    return (
+        <div className="container">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<MarkdownEditor/>}>
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
+}
 
-export const App = ({num}: AppProps) => <h1>Hello world React! Num: {num}</h1>;
+export default App;
