@@ -1,7 +1,10 @@
 .editor-wrapper {
     height: 100vh;
     flex: 0 0 50%;
-    overflow-y: scroll;
+    overflow-y: auto;
+    background-color: #282c34;
+    padding-top: 0.75rem;
+    padding-right: 0.5rem;
 }
 
 .cm-line, .cm-lineNumbers, .cm-gutter, .cm-foldGutter, .cm-gutterElement {
@@ -10,5 +13,9 @@
 }
 
 .cm-lineNumbers {
-    padding-left: 2rem;
+    padding-left: 1rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

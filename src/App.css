@@ -1,6 +1,5 @@
 .app {
   background-color: transparent;
   display: flex;
-  flex: 1;
-  overflow: hidden;
+  flex: auto;
 }

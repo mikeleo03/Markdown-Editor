@@ -2,7 +2,7 @@ import React from 'react'
 import remarkGfm from 'remark-gfm'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import './preview.css'
+// import './preview.css'
 import 'github-markdown-css/github-markdown.css'
 import ReactMarkdown from 'react-markdown'
 
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Preview: React.FC<Props> = (props) => {
-    return <div className='preview markdown-body'>
+    return <div /* className='preview markdown-body' */ className='w-1/2'>
         <ReactMarkdown
             children={props.doc}
             remarkPlugins={[remarkGfm]}
