@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import Editor from './editor'
 import Preview from './preview'
-// import './app.css'
+import './app.css'
 
 const App: React.FC = () => {
   const [doc, setDoc] = useState<string>('# Hello, World!\n')
@@ -11,7 +11,7 @@ const App: React.FC = () => {
   }, [])
 
   return (
-    <div className="flex w-full">
+    <div className="app">
       <Editor onChange={handleDocChange} initialDoc={doc} />
       <Preview doc={doc} />
     </div>

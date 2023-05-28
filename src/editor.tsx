@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react'
 import useCodeMirror from './use-codemirror'
-// import './editor.css';
+import './editor.css';
 import { EditorState } from '@codemirror/state'
 
 interface Props {
@@ -27,7 +27,7 @@ const Editor: React.FC<Props> = (props) => {
         }
     }, [editorView])
 
-    return <div className='w-1/2' ref={refContainer}></div>
+    return <div className='editor-wrapper' ref={refContainer}></div>
 }
 
 export default Editor
