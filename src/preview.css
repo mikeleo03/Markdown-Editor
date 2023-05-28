@@ -1,8 +1,8 @@
 .preview.markdown-body {
     flex: 0 0 50%;
     padding: 10px;
-    overflow: auto;
-    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100vh;
     color: #abb2bf;
 }
   

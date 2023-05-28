@@ -1,6 +1,6 @@
 .app {
   background-color: transparent;
   display: flex;
-  gap: 10px;
   flex: 1;
+  overflow: hidden;
 }

@@ -1,4 +1,14 @@
 .editor-wrapper {
-    height: 100%;
+    height: 100vh;
     flex: 0 0 50%;
+    overflow-y: scroll;
+}
+
+.cm-line, .cm-lineNumbers, .cm-gutter, .cm-foldGutter, .cm-gutterElement {
+    font-weight: 100;
+    font-size: 1.25rem;
+}
+
+.cm-lineNumbers {
+    padding-left: 2rem;
 }
