@@ -1,7 +1,7 @@
 .preview.markdown-body {
     flex: 1 1 50%;
     overflow-y: auto;
-    height: 100vh;
+    height: 80vh;
     color: #abb2bf;
     padding-left: 1.25rem;
     padding-right: 1.25rem;

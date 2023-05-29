@@ -1,0 +1,30 @@
+.main-prevpane {
+    height: 20vh;
+    overflow-y: auto;
+}
+
+.info {
+    height: 13.8vh;
+    background-color: #474a51;
+}
+
+.label {
+    height: 5vh;
+    padding-top: 1.2vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 700;
+    background-color: #33353b;
+}
+
+.label1 {
+    flex: 1 1 50%;
+    padding-left: 1.5rem;
+    background-color: #33353b;
+}
+
+.label2 {
+    flex: 1 1 50%;
+    background-color: #33353b;
+}
