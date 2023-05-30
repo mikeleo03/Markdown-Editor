@@ -5,19 +5,19 @@ import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './preview.css'
 import 'github-markdown-css/github-markdown.css'
 import ReactMarkdown from 'react-markdown'
-import CopyBtn from './copy-btn'
+// import CopyBtn from './copy-btn'
 
 interface Props {
     doc: string
 }
 
 const Preview: React.FC<Props> = (props) => {
-    const Pre = ({ children }: { children: JSX.Element }) => (
+    /* const Pre = ({ children }: { children: JSX.Element }) => (
         <pre>
             <CopyBtn>{children}</CopyBtn>
             {children}
         </pre>
-    );
+    ); */
 
     return (
         <div className='preview markdown-body'>
@@ -25,7 +25,7 @@ const Preview: React.FC<Props> = (props) => {
                 children={props.doc}
                 remarkPlugins={[remarkGfm]}
                 components={{
-                    pre: Pre,
+                    // pre: Pre,
                     code({ node, inline, className, children, ...props }) {
                         const match = /language-(\w+)/.exec(className || '')
                         return !inline && match ? (
