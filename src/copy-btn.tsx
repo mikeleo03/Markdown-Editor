@@ -7,12 +7,8 @@ interface Props {
 }
 
 const CopyBtn: React.FC<Props> = ({ children }) => {
-  const [copied, setCopied] = useState(false);
-
-  const handleClick = (e: React.MouseEvent<SVGSVGElement>) => {
+  const handleClick = () => {
     navigator.clipboard.writeText(children.props.children.toString());
-    setCopied(true);
-    setTimeout(() => setCopied(false), 500);
   };
 
   return (

@@ -16,7 +16,7 @@ const Prevpane = () => {
                     </div>
                 </div>
                 <div className='info2'>
-                    <p>Character count</p>
+                    {/* <p>Character count</p> */}
                 </div>
             </div>
             <div className='label'>

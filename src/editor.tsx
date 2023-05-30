@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import useCodeMirror from './use-codemirror';
 import './editor.css';
-import { EditorState, Transaction } from '@codemirror/state';
+import { EditorState } from '@codemirror/state';
 
 interface Props {
     initialDoc: string;
@@ -24,19 +24,19 @@ const Editor: React.FC<Props> = (props) => {
         onChange: handleChange
     });
 
-    const [charCount, setCharCount] = useState(initialDoc.length);
+    // const [charCount, setCharCount] = useState(initialDoc.length);
 
     useEffect(() => {
         if (editorView) {
             // const docText = Transaction.newDoc.toString();
-            setCharCount(onChange.length);
+            // setCharCount(onChange.length);
+        } else {
+
         }
     }, [editorView]);
 
     return (
-        <div className='editor-wrapper' ref={refContainer}>
-            <div className='char-counter'>Character Count: {charCount}</div>
-        </div>
+        <div className='editor-wrapper' ref={refContainer}></div>
     );
 };
 
