@@ -1,6 +1,6 @@
 import React from 'react'
 import remarkGfm from 'remark-gfm'
-import SyntaxHighlighter from 'react-syntax-highlighter'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import './preview.css'
 import 'github-markdown-css/github-markdown.css'
