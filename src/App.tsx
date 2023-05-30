@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import Editor from './editor'
 import Preview from './preview'
-import './app.css'
+import './App.css'
 import Prevpane from './components/prevpane'
 
 const backgroundStyle = {
