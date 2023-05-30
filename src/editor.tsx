@@ -1,33 +1,43 @@
-import React, { useCallback, useEffect } from 'react'
-import useCodeMirror from './use-codemirror'
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import useCodeMirror from './use-codemirror';
 import './editor.css';
-import { EditorState } from '@codemirror/state'
+import { EditorState, Transaction } from '@codemirror/state';
 
 interface Props {
-    initialDoc: string,
-    onChange: (doc: string) => void
+    initialDoc: string;
+    onChange: (doc: string) => void;
 }
 
 const Editor: React.FC<Props> = (props) => {
-    const { onChange, initialDoc } = props
+    const { onChange, initialDoc } = props;
+
     const handleChange = useCallback(
-        (state: EditorState) => onChange(state.doc.toString()),
+        (state: EditorState) => {
+            const docText = state.doc.toString();
+            onChange(docText);
+        },
         [onChange]
-    )
+    );
+
     const [refContainer, editorView] = useCodeMirror<HTMLDivElement>({
         initialDoc: initialDoc,
         onChange: handleChange
-    })
+    });
+
+    const [charCount, setCharCount] = useState(initialDoc.length);
 
     useEffect(() => {
         if (editorView) {
-            // Do nothing for now
-        } else {
-            // loading editor
+            // const docText = Transaction.newDoc.toString();
+            setCharCount(onChange.length);
         }
-    }, [editorView])
+    }, [editorView]);
 
-    return <div className='editor-wrapper' ref={refContainer}></div>
-}
+    return (
+        <div className='editor-wrapper' ref={refContainer}>
+            <div className='char-counter'>Character Count: {charCount}</div>
+        </div>
+    );
+};
 
-export default Editor
+export default Editor;

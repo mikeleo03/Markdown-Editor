@@ -6,6 +6,63 @@
 .info {
     height: 13.8vh;
     background-color: #474a51;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.info1 {
+    flex: 1 1 50%;
+    padding-left: 1.5rem;
+    font-size: 2.4vh;
+}
+
+.info-label, p {
+    font-weight: 400;
+    font-size: 300;
+}
+
+.info1.file-name {
+    height: 2.5vh;
+    max-height: 2.5vh;
+}
+
+textarea {
+    height: 2.5vh;
+    max-height: 2.5vh;
+    min-height: 2.5vh;
+    width: 35vw;
+    max-width: 35vw;
+    min-width: 35vw;
+    font-weight: 300;
+    font-size: 3vh;
+    margin-top: -2vh;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; /*remove the resize handle on the bottom right*/
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: -10vh;
+}
+
+.info2 {
+    flex: 1 1 50%;
+    font-size: 2.4vh;
+    text-align: right;
+    padding-right: 1.5rem;
 }
 
 .label {
@@ -21,10 +78,12 @@
 .label1 {
     flex: 1 1 50%;
     padding-left: 1.5rem;
+    font-size: 2.4vh;
     background-color: #33353b;
 }
 
 .label2 {
     flex: 1 1 50%;
+    font-size: 2.4vh;
     background-color: #33353b;
 }
