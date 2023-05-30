@@ -12,36 +12,40 @@ interface Props {
 }
 
 const Preview: React.FC<Props> = (props) => {
-    const Pre = ({ children }) => <pre>
-        <CopyBtn>{children}</CopyBtn>
-        {children}
-    </pre>
+    const Pre = ({ children }: { children: JSX.Element }) => (
+        <pre>
+            <CopyBtn>{children}</CopyBtn>
+            {children}
+        </pre>
+    );
 
-    return <div className='preview markdown-body'>
-        <ReactMarkdown
-            children={props.doc}
-            remarkPlugins={[remarkGfm]}
-            components={{
-                pre: Pre,
-                code({ node, inline, className, children, ...props }) {
-                    const match = /language-(\w+)/.exec(className || '')
-                    return !inline && match ? (
-                        <SyntaxHighlighter
-                            children={String(children).replace(/\n$/, '')}
-                            style={prism}
-                            language={match[1]}
-                            PreTag="div"
-                            {...props}
-                        />
-                    ) : (
-                        <code className={className} {...props}>
-                            {children}
-                        </code>
-                    )
-                }
-            }}
-        />
-    </div>
+    return (
+        <div className='preview markdown-body'>
+            <ReactMarkdown
+                children={props.doc}
+                remarkPlugins={[remarkGfm]}
+                components={{
+                    pre: Pre,
+                    code({ node, inline, className, children, ...props }) {
+                        const match = /language-(\w+)/.exec(className || '')
+                        return !inline && match ? (
+                            <SyntaxHighlighter
+                                children={String(children).replace(/\n$/, '')}
+                                style={prism}
+                                language={match[1]}
+                                PreTag="div"
+                                {...props}
+                            />
+                        ) : (
+                            <code className={className} {...props}>
+                                {children}
+                            </code>
+                        )
+                    }
+                }}
+            />
+        </div>
+    );
 }
 
-export default Preview
+export default Preview;

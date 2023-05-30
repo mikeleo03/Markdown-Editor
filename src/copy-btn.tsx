@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdOutlineContentCopy } from 'react-icons/md';
 import './copy-btn.css';
 
