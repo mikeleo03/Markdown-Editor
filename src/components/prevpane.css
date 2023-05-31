@@ -65,6 +65,20 @@ button {
     padding-right: 1.5rem;
 }
 
+.button-info {
+    background-color: transparent;
+    border: none;
+    margin-top: 1vh;
+    height: 5vh;
+    padding-left: 0;
+}
+
+svg {
+    height: 5vw;
+    width: 5vh;
+    fill: white;
+}
+
 .label {
     height: 5vh;
     padding-top: 1.2vh;
