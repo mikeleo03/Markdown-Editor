@@ -63,14 +63,15 @@ button {
 .button-info {
     background-color: transparent;
     border: none;
-    margin-top: 1vh;
-    height: 5vh;
+    margin-top: 1.75rem;
+    height: 10px;
+    width: auto;
     padding-left: 0;
 }
 
 svg {
-    height: 5vw;
-    width: 5vh;
+    height: 2rem;
+    width: auto;
     fill: white;
 }
 

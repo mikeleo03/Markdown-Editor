@@ -11,8 +11,8 @@
   top: 0px;
   left: 0px;
   z-index: 5;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -44,7 +44,7 @@
   position: fixed;
   z-index: 6;
   padding: 0;
-  margin-top: 1vh;
+  margin-top: 4.5vh;
   margin-left: 95vw;
   float: right;
   background: none;
@@ -157,4 +157,43 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #747474; 
+}
+
+@media screen and (max-width: 1000px) {
+  .infoo button {
+    padding: 0;
+    margin-top: 5vh;
+    margin-left: 80vw;
+    z-index: 7;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .css-11brbng {
+    top: 6vh;
+    left: 3vw;
+    z-index: 6;
+    width: 80vw;
+    height: 80vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+
+  .wrapper {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .main-tit {
+    font-size: 1.2rem;
+  }
+
+  .infoo button {
+    padding: 0;
+    margin-top: 5vh;
+    margin-left: 90vw;
+    z-index: 7;
+  }
 }
