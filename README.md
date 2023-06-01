@@ -21,7 +21,10 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 ## Screenshots
-![demo](img/screenshot.PNG)
+Demonstration of usage, funfact : this README is made using this app!
+![demo1](img/screenshot1.PNG)
+Cheatsheet interface
+![demo2](img/screenshot2.PNG)
 
 ## Contributors
 <a href = "https://github.com/mikeleo03/markdown-editor/graphs/contributors">
