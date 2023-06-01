@@ -27,6 +27,6 @@ You can also run the project from the web link provided using github pages envir
 ![demo](img/screenshot.PNG)
 
 ## Contributors
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+<a href = "https://github.com/mikeleo03/markdown-editor/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=mikeleo03/markdown-editor"/>
 </a>
