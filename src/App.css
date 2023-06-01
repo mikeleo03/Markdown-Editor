@@ -22,16 +22,16 @@
   background-color: #51545d;
   border-radius: 10px;
   top: 10vh;
-  left: 25vw;
+  left: 21.5vw;
   z-index: 6;
   width: 50vw;
   height: 70vh;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
   overflow-y: auto;
 }
 
@@ -83,10 +83,12 @@
   font-weight: 700;
 }
 
-.ex-mark {
+p.ex-mark {
   background-color: #f8f840;
   color: #000;
   padding: 0;
+  max-width: fit-content;
+  margin-left: 2vw;
 }
 
 .ex-del {

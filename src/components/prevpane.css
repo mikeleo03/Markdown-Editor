@@ -82,6 +82,7 @@ svg {
     color: white;
     font-weight: 700;
     background-color: #33353b;
+    box-shadow: 3px 3px;
 }
 
 .label1 {
