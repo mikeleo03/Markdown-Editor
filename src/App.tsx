@@ -4,7 +4,6 @@ import Editor from './editor'
 import Preview from './preview'
 import './App.css'
 import Prevpane from './components/prevpane'
-import { Link } from 'react-router-dom';
 
 const backgroundStyle = {
   width: "100vw",

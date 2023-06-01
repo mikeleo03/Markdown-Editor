@@ -1,7 +1,11 @@
 import "./prevpane.css"
 import { AiFillQuestionCircle, AiOutlineInfoCircle } from 'react-icons/ai';
 
-const Prevpane = ({ handleInfo }) => {
+interface Props {
+    handleInfo: () => void;
+}
+  
+const Prevpane: React.FC<Props> = ({ handleInfo }) => {
     return (
         <div className="main-prevpane">
             <div className='info'>

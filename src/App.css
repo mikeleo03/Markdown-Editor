@@ -44,8 +44,8 @@
   position: fixed;
   z-index: 6;
   padding: 0;
-  margin-top: 1.3vh;
-  margin-left: 94.6vw;
+  margin-top: 1vh;
+  margin-left: 95vw;
   float: right;
   background: none;
   border: none;
@@ -62,6 +62,7 @@
   padding-bottom: 1rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
+  box-shadow: 3px 3px;
 }
 
 .ex-title {
@@ -134,4 +135,24 @@ a:active {
 a {
   text-decoration: none;
   color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8e8e8e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #747474; 
 }
