@@ -15,13 +15,10 @@ In the project directory, you can run:
 
 ### `npm run dev`
 
-Ths runs the app in the development mode.<br />
-Open [localhost:5173/markdown-editor](localhost:5173/markdown-editor) to view it in the browser.
+Ths runs the app in the development mode.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-You can also run the project from the web link provided using github pages environment.
 
 ## Screenshots
 ![demo](img/screenshot.PNG)
