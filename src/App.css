@@ -19,16 +19,19 @@
 
 .css-11brbng {
   position: absolute;
-  background-color: rgb(175, 175, 191);
+  background-color: #51545d;
   border-radius: 10px;
   top: 10vh;
-  left: 30vw;
+  left: 25vw;
   z-index: 6;
-  width: 40vw;
+  width: 50vw;
   height: 70vh;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
-  padding: 20px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   overflow-y: auto;
 }
 
@@ -38,17 +41,37 @@
 }
 
 .infoo button {
-  position: relative;
+  position: fixed;
   z-index: 6;
   padding: 0;
+  margin-top: 1.3vh;
+  margin-left: 94.6vw;
   float: right;
   background: none;
   border: none;
 }
 
+.infoo .main-tit {
+  color: white;
+  padding-left: 0.7rem;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  padding-top: 5px;
+  padding-bottom: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
 .ex-title {
-  background-color: white;
+  background-color: rgb(208, 208, 208);
   text-align: center;
+  border-radius: 2rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .ex-em {
@@ -75,9 +98,40 @@
   font-weight: 400;
 }
 
+.ex-list {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
 .ex-list p {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.ex-gre {
+  color: green;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(208, 208, 208);
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
